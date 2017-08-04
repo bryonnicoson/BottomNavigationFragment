@@ -1,4 +1,4 @@
-package com.bryonnicoson.fragment;
+package com.bryonnicoson.bottomnavigationfragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -6,24 +6,31 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.view.MenuItem;
-import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
 
-    // private TextView mTextMessage;
-
-    // Adding fragments
     private final String TAG = MainActivity.class.getSimpleName();
     private Fragment fragment;
     private FragmentManager fragmentManager;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // custom font implementation for title
+        SpannableString s = new SpannableString("WishBone Canine Rescue");
+        s.setSpan(new TypefaceSpan(this, "Balham.otf"), 0, s.length(),
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle(s);
+
 
         fragmentManager = getSupportFragmentManager();
 

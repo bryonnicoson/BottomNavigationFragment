@@ -1,4 +1,4 @@
-package com.bryonnicoson.fragment;
+package com.bryonnicoson.bottomnavigationfragment;
 
 import org.junit.Test;
 

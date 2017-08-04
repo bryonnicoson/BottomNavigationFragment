@@ -1,4 +1,4 @@
-package com.bryonnicoson.fragment.model;
+package com.bryonnicoson.bottomnavigationfragment.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.bryonnicoson.fragment.model;
+package com.bryonnicoson.bottomnavigationfragment.model;
 
 /**
  * Created by bryon on 8/9/16.

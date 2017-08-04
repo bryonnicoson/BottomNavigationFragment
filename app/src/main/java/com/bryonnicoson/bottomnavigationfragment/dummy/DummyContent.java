@@ -1,4 +1,4 @@
-package com.bryonnicoson.fragment.dummy;
+package com.bryonnicoson.bottomnavigationfragment.dummy;
 
 import java.util.ArrayList;
 import java.util.HashMap;

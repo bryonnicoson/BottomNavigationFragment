@@ -1,4 +1,4 @@
-package com.bryonnicoson.fragment;
+package com.bryonnicoson.bottomnavigationfragment;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

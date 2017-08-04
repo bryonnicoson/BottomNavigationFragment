@@ -1,17 +1,14 @@
-package com.bryonnicoson.fragment;
+package com.bryonnicoson.bottomnavigationfragment;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
-public class CalendarFragment extends Fragment {
-    public static CalendarFragment newInstance() {
-        CalendarFragment fragment = new CalendarFragment();
+public class FosterFragment extends Fragment {
+    public static FosterFragment newInstance() {
+        FosterFragment fragment = new FosterFragment();
         return fragment;
     }
 
@@ -23,6 +20,8 @@ public class CalendarFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_calendar, container, false);
+        return inflater.inflate(R.layout.fragment_foster, container, false);
     }
 }
+
+
